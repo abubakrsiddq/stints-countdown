@@ -12,6 +12,7 @@ body {
 .container {
     text-align: center;
     position: relative;
+    padding: 20px;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 #countdown div {
@@ -30,6 +32,8 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     font-size: 2em;
+    min-width: 100px;
+    margin: 10px;
 }
 
 .person {
@@ -40,20 +44,21 @@ h1 {
     bottom: 0;
     left: 0;
     border-radius: 50%;
-    animation: travel 10s linear infinite;
 }
 
-@keyframes travel {
-    0% {
-        left: 0;
-        bottom: 0;
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
     }
-    50% {
-        left: calc(100% - 50px);
-        bottom: calc(100% - 50px);
+
+    #countdown div {
+        font-size: 1.5em;
+        padding: 15px;
     }
-    100% {
-        left: 0;
-        bottom: 0;
+
+    .person {
+        width: 40px;
+        height: 40px;
     }
 }
