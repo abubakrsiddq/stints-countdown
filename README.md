@@ -1,1 +1,1 @@
-# TAS-stints-countdown
+# stints-countdown
