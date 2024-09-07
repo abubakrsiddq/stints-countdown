@@ -24,6 +24,7 @@ h1 {
 
 #countdown {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -53,9 +54,16 @@ h1 {
         font-size: 2em;
     }
 
+    #countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
     #countdown div {
         font-size: 1.5em;
         padding: 15px;
+        width: 100%;
+        max-width: 300px;
     }
 
     .person {
