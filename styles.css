@@ -22,22 +22,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-#countdown {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#countdown div {
-    background-color: #4b0082;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 2em;
-    min-width: 80px;
-    margin: 10px;
-}
-
 .person {
     width: 50px;
     height: 50px;
@@ -52,18 +36,6 @@ h1 {
 @media (max-width: 600px) {
     h1 {
         font-size: 2em;
-    }
-
-    #countdown {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #countdown div {
-        font-size: 1.5em;
-        padding: 15px;
-        width: 100%;
-        max-width: 300px;
     }
 
     .person {
